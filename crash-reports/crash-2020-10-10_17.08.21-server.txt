@@ -1,0 +1,247 @@
+---- Minecraft Crash Report ----
+// Oops.
+
+Time: 10/10/20, 5:08 PM
+Description: Watching Server
+
+java.lang.Error
+	at app//dde.a(SourceFile:54)
+	at app//dde.b(SourceFile:33)
+	at app//ddb.c(SourceFile:175)
+	at app//apx.g(SourceFile:809)
+	at app//apx.a(SourceFile:590)
+	at app//aqj.a(SourceFile:2145)
+	at app//aqj.g(SourceFile:2098)
+	at app//aqj.k(SourceFile:2547)
+	at app//aqk.k(SourceFile:542)
+	at app//apv.k(SourceFile:127)
+	at app//azw.k(SourceFile:54)
+	at app//azz.k(SourceFile:81)
+	at app//aqj.j(SourceFile:2254)
+	at app//aqk.j(SourceFile:342)
+	at app//aag.a(SourceFile:616)
+	at app//aag$$Lambda$3705/0x0000000840961440.accept(Unknown Source)
+	at app//bru.a(SourceFile:561)
+	at app//aag.a(SourceFile:406)
+	at app//net.minecraft.server.MinecraftServer.b(SourceFile:868)
+	at app//zg.b(SourceFile:303)
+	at app//net.minecraft.server.MinecraftServer.a(SourceFile:808)
+	at app//net.minecraft.server.MinecraftServer.w(SourceFile:667)
+	at app//net.minecraft.server.MinecraftServer.a(SourceFile:254)
+	at app//net.minecraft.server.MinecraftServer$$Lambda$3296/0x0000000840809c40.run(Unknown Source)
+	at java.base@11.0.8/java.lang.Thread.run(Thread.java:834)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Stacktrace:
+	at app//dde.a(SourceFile:54)
+	at app//dde.b(SourceFile:33)
+	at app//ddb.c(SourceFile:175)
+	at app//apx.g(SourceFile:809)
+	at app//apx.a(SourceFile:590)
+	at app//aqj.a(SourceFile:2145)
+	at app//aqj.g(SourceFile:2098)
+	at app//aqj.k(SourceFile:2547)
+	at app//aqk.k(SourceFile:542)
+	at app//apv.k(SourceFile:127)
+	at app//azw.k(SourceFile:54)
+	at app//azz.k(SourceFile:81)
+	at app//aqj.j(SourceFile:2254)
+	at app//aqk.j(SourceFile:342)
+	at app//aag.a(SourceFile:616)
+	at app//aag$$Lambda$3705/0x0000000840961440.accept(Unknown Source)
+	at app//bru.a(SourceFile:561)
+	at app//aag.a(SourceFile:406)
+	at app//net.minecraft.server.MinecraftServer.b(SourceFile:868)
+	at app//zg.b(SourceFile:303)
+	at app//net.minecraft.server.MinecraftServer.a(SourceFile:808)
+	at app//net.minecraft.server.MinecraftServer.w(SourceFile:667)
+	at app//net.minecraft.server.MinecraftServer.a(SourceFile:254)
+
+-- Thread Dump --
+Details:
+	Threads: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@11.0.8/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@11.0.8/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@11.0.8/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+
+"Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@4632ee97
+	at java.base@11.0.8/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@4632ee97
+	at java.base@11.0.8/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.8/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@11.0.8/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+
+"Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+"Common-Cleaner" daemon prio=8 Id=9 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@582e44e5
+	at java.base@11.0.8/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@582e44e5
+	at java.base@11.0.8/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.8/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@11.0.8/java.lang.Thread.run(Thread.java:834)
+	at java.base@11.0.8/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+
+"Worker-Bootstrap-1" daemon prio=5 Id=13 WAITING on java.util.concurrent.ForkJoinPool@79a78088
+	at java.base@11.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@79a78088
+	at java.base@11.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@11.0.8/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1628)
+	at java.base@11.0.8/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+
+
+"Timer hack thread" daemon prio=5 Id=14 TIMED_WAITING
+	at java.base@11.0.8/java.lang.Thread.sleep(Native Method)
+	at app//x$6.run(SourceFile:636)
+
+
+"Snooper Timer" daemon prio=5 Id=18 WAITING on java.util.TaskQueue@3e9c2c1b
+	at java.base@11.0.8/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@3e9c2c1b
+	at java.base@11.0.8/java.lang.Object.wait(Object.java:328)
+	at java.base@11.0.8/java.util.TimerThread.mainLoop(Timer.java:527)
+	at java.base@11.0.8/java.util.TimerThread.run(Timer.java:506)
+
+
+"Server thread" prio=5 Id=17 RUNNABLE
+	at app//dde.a(SourceFile:54)
+	at app//dde.b(SourceFile:33)
+	at app//ddb.c(SourceFile:175)
+	at app//apx.g(SourceFile:809)
+	at app//apx.a(SourceFile:590)
+	at app//aqj.a(SourceFile:2145)
+	at app//aqj.g(SourceFile:2098)
+	at app//aqj.k(SourceFile:2547)
+	...
+
+
+"DestroyJavaVM" prio=5 Id=20 RUNNABLE
+
+
+"ObjectCleanerThread" daemon prio=1 Id=22 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@157706fa
+	at java.base@11.0.8/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@157706fa
+	at java.base@11.0.8/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at app//io.netty.util.internal.ObjectCleaner$1.run(ObjectCleaner.java:54)
+	at app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base@11.0.8/java.lang.Thread.run(Thread.java:834)
+
+
+"Netty Epoll Server IO #0" daemon prio=5 Id=23 RUNNABLE
+	at app//io.netty.channel.epoll.Native.epollWait0(Native Method)
+	at app//io.netty.channel.epoll.Native.epollWait(Native.java:114)
+	at app//io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:239)
+	at app//io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:256)
+	at app//io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at java.base@11.0.8/java.lang.Thread.run(Thread.java:834)
+
+
+"Netty Epoll Server IO #1" daemon prio=5 Id=28 RUNNABLE (in native)
+	at app//io.netty.channel.epoll.Native.epollWait0(Native Method)
+	at app//io.netty.channel.epoll.Native.epollWait(Native.java:114)
+	at app//io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:239)
+	at app//io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:256)
+	at app//io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at java.base@11.0.8/java.lang.Thread.run(Thread.java:834)
+
+
+"Server Watchdog" daemon prio=5 Id=29 RUNNABLE
+	at java.management@11.0.8/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@11.0.8/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:502)
+	at java.management@11.0.8/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:490)
+	at app//zj.run(SourceFile:45)
+	at java.base@11.0.8/java.lang.Thread.run(Thread.java:834)
+
+
+"Netty Epoll Server IO #2" daemon prio=5 Id=30 RUNNABLE (in native)
+	at app//io.netty.channel.epoll.Native.epollWait0(Native Method)
+	at app//io.netty.channel.epoll.Native.epollWait(Native.java:114)
+	at app//io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:239)
+	at app//io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:256)
+	at app//io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at java.base@11.0.8/java.lang.Thread.run(Thread.java:834)
+
+
+"Netty Epoll Server IO #3" daemon prio=5 Id=31 RUNNABLE (in native)
+	at app//io.netty.channel.epoll.Native.epollWait0(Native Method)
+	at app//io.netty.channel.epoll.Native.epollWait(Native.java:114)
+	at app//io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:239)
+	at app//io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:256)
+	at app//io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at java.base@11.0.8/java.lang.Thread.run(Thread.java:834)
+
+
+"Worker-Main-435" daemon prio=5 Id=475 WAITING on java.util.concurrent.ForkJoinPool@3fd471dd
+	at java.base@11.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@3fd471dd
+	at java.base@11.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@11.0.8/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1628)
+	at java.base@11.0.8/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+
+
+"SIGTERM handler" daemon prio=9 Id=535 WAITING on net.minecraft.server.Main$1@32f7d983
+	at java.base@11.0.8/java.lang.Object.wait(Native Method)
+	-  waiting on net.minecraft.server.Main$1@32f7d983
+	at java.base@11.0.8/java.lang.Thread.join(Thread.java:1305)
+	at java.base@11.0.8/java.lang.Thread.join(Thread.java:1380)
+	at java.base@11.0.8/java.lang.ApplicationShutdownHooks.runHooks(ApplicationShutdownHooks.java:107)
+	at java.base@11.0.8/java.lang.ApplicationShutdownHooks$1.run(ApplicationShutdownHooks.java:46)
+	at java.base@11.0.8/java.lang.Shutdown.runHooks(Shutdown.java:130)
+	at java.base@11.0.8/java.lang.Shutdown.exit(Shutdown.java:174)
+	-  locked java.lang.Class@2d6a9952
+	at java.base@11.0.8/java.lang.Terminator$1.handle(Terminator.java:51)
+	...
+
+
+"Server Shutdown Thread" prio=5 Id=19 WAITING on java.lang.Thread@7a32156f
+	at java.base@11.0.8/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.Thread@7a32156f
+	at java.base@11.0.8/java.lang.Thread.join(Thread.java:1305)
+	at java.base@11.0.8/java.lang.Thread.join(Thread.java:1380)
+	at app//net.minecraft.server.MinecraftServer.a(SourceFile:633)
+	at app//net.minecraft.server.Main$1.run(SourceFile:198)
+
+
+"SIGHUP handler" daemon prio=9 Id=536 BLOCKED on java.lang.Class@2d6a9952 owned by "SIGTERM handler" Id=535
+	at java.base@11.0.8/java.lang.Shutdown.exit(Shutdown.java:173)
+	-  blocked on java.lang.Class@2d6a9952
+	at java.base@11.0.8/java.lang.Terminator$1.handle(Terminator.java:51)
+	at java.base@11.0.8/jdk.internal.misc.Signal$1.run(Signal.java:220)
+	at java.base@11.0.8/java.lang.Thread.run(Thread.java:834)
+
+
+"SIGTERM handler" daemon prio=9 Id=537 BLOCKED on java.lang.Class@2d6a9952 owned by "SIGTERM handler" Id=535
+	at java.base@11.0.8/java.lang.Shutdown.exit(Shutdown.java:173)
+	-  blocked on java.lang.Class@2d6a9952
+	at java.base@11.0.8/java.lang.Terminator$1.handle(Terminator.java:51)
+	at java.base@11.0.8/jdk.internal.misc.Signal$1.run(Signal.java:220)
+	at java.base@11.0.8/java.lang.Thread.run(Thread.java:834)
+
+
+
+Stacktrace:
+	at zj.run(SourceFile:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.3
+	Minecraft Version ID: 1.16.3
+	Operating System: Linux (amd64) version 4.19.0-11-cloud-amd64
+	Java Version: 11.0.8, Debian
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Debian
+	Memory: 390851256 bytes (372 MB) / 2098200576 bytes (2001 MB) up to 4294967296 bytes (4096 MB)
+	CPUs: 2
+	JVM Flags: 2 total; -Xmx3G -Xmx4G
+	Player Count: 1 / 20; [aah['wolffish44'/27526, l='ServerLevel[world]', x=659.41, y=63.00, z=573.55]]
+	Data Packs: vanilla
+	Is Modded: Unknown (can't tell)
+	Type: Dedicated Server (map_server.txt)

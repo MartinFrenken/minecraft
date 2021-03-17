@@ -41,6 +41,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/light_blue_dye_from_blue_orchid": {
+    "criteria": {
+      "has_red_flower": "2021-03-15 15:01:19 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/stone_bricks": {
     "criteria": {
       "has_stone": "2020-10-05 14:32:19 +0000"
@@ -50,6 +56,12 @@
   "minecraft:recipes/redstone/observer": {
     "criteria": {
       "has_quartz": "2020-10-05 17:57:01 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone": {
+    "criteria": {
+      "has_vine": "2021-03-15 15:00:07 +0000"
     },
     "done": true
   },
@@ -657,6 +669,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_cod_from_campfire_cooking": {
+    "criteria": {
+      "has_cod": "2021-03-15 14:54:14 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/coal_from_blasting": {
     "criteria": {
       "has_coal_ore": "2020-10-06 15:54:00 +0000"
@@ -1160,6 +1178,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_cod_from_smoking": {
+    "criteria": {
+      "has_cod": "2021-03-15 14:54:14 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/lantern": {
     "criteria": {
       "has_iron_ingot": "2020-10-05 11:10:47 +0000"
@@ -1452,7 +1476,9 @@
     "criteria": {
       "cooked_mutton": "2020-10-08 13:02:57 +0000",
       "cooked_beef": "2020-10-05 13:18:41 +0000",
+      "baked_potato": "2021-03-16 19:59:11 +0000",
       "bread": "2020-10-05 13:47:56 +0000",
+      "cooked_chicken": "2021-03-15 14:56:14 +0000",
       "cooked_salmon": "2020-10-05 11:21:57 +0000"
     },
     "done": false
@@ -1460,6 +1486,12 @@
   "minecraft:recipes/tools/wooden_hoe": {
     "criteria": {
       "has_stick": "2020-10-05 10:59:48 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod": {
+    "criteria": {
+      "has_cod": "2021-03-15 14:54:14 +0000"
     },
     "done": true
   },

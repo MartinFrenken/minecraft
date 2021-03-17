@@ -419,6 +419,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/emerald": {
+    "criteria": {
+      "has_emerald_block": "2020-10-10 18:00:50 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/yellow_stained_glass": {
     "criteria": {
       "has_glass": "2020-10-05 10:58:03 +0000"
@@ -777,6 +783,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_cod_from_campfire_cooking": {
+    "criteria": {
+      "has_cod": "2020-10-11 12:45:52 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/coal_from_blasting": {
     "criteria": {
       "has_coal_ore": "2020-10-06 09:28:33 +0000"
@@ -828,6 +840,12 @@
   "minecraft:recipes/decorations/magenta_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_glass_pane": "2020-10-05 10:58:19 +0000"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/tame_an_animal": {
+    "criteria": {
+      "tamed_animal": "2020-10-09 14:24:36 +0000"
     },
     "done": true
   },
@@ -927,6 +945,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/jungle_wood": {
+    "criteria": {
+      "has_log": "2020-10-11 15:35:13 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/spruce_wood": {
     "criteria": {
       "has_log": "2020-10-05 12:30:03 +0000"
@@ -1014,6 +1038,12 @@
   "minecraft:recipes/building_blocks/sea_lantern": {
     "criteria": {
       "has_prismarine_crystals": "2020-10-05 19:32:58 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_planks": {
+    "criteria": {
+      "has_logs": "2020-10-11 15:35:13 +0000"
     },
     "done": true
   },
@@ -1418,6 +1448,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_cod_from_smoking": {
+    "criteria": {
+      "has_cod": "2020-10-11 12:45:52 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/lantern": {
     "criteria": {
       "has_iron_ingot": "2020-10-04 23:13:21 +0000"
@@ -1744,6 +1780,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/red_dye_from_beetroot": {
+    "criteria": {
+      "has_beetroot": "2020-10-10 18:38:02 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/mushroom_stew": {
     "criteria": {
       "has_brown_mushroom": "2020-10-05 12:49:34 +0000"
@@ -1776,6 +1818,7 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
+      "cooked_porkchop": "2020-10-11 12:48:01 +0000",
       "cooked_mutton": "2020-10-08 14:31:49 +0000",
       "sweet_berries": "2020-10-05 13:58:17 +0000",
       "cooked_beef": "2020-10-05 21:07:16 +0000",
@@ -1784,6 +1827,8 @@
       "pumpkin_pie": "2020-10-05 14:06:03 +0000",
       "bread": "2020-10-05 14:11:28 +0000",
       "melon_slice": "2020-10-05 13:00:39 +0000",
+      "beetroot": "2020-10-10 18:44:05 +0000",
+      "cooked_chicken": "2020-10-12 12:58:30 +0000",
       "rabbit_stew": "2020-10-08 10:27:40 +0000",
       "cooked_salmon": "2020-10-04 22:31:57 +0000"
     },
@@ -1792,6 +1837,12 @@
   "minecraft:recipes/tools/wooden_hoe": {
     "criteria": {
       "has_stick": "2020-10-04 22:12:48 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod": {
+    "criteria": {
+      "has_cod": "2020-10-11 12:45:52 +0000"
     },
     "done": true
   },
@@ -1971,6 +2022,7 @@
   },
   "minecraft:husbandry/bred_all_animals": {
     "criteria": {
+      "minecraft:cat": "2020-10-18 14:36:42 +0000",
       "minecraft:sheep": "2020-10-08 11:18:19 +0000",
       "minecraft:cow": "2020-10-07 17:48:07 +0000"
     },
@@ -2015,6 +2067,12 @@
   "minecraft:recipes/transportation/minecart": {
     "criteria": {
       "has_iron_ingot": "2020-10-04 23:13:21 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/beetroot_soup": {
+    "criteria": {
+      "has_beetroot": "2020-10-10 18:38:02 +0000"
     },
     "done": true
   },
@@ -2186,6 +2244,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/dried_kelp": {
+    "criteria": {
+      "has_dried_kelp_block": "2020-10-08 21:36:24 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/activator_rail": {
     "criteria": {
       "has_rail": "2020-10-05 10:12:49 +0000"
@@ -2261,6 +2325,12 @@
   "minecraft:recipes/building_blocks/spruce_stairs": {
     "criteria": {
       "has_planks": "2020-10-05 18:44:40 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/magenta_carpet_from_white_carpet": {
+    "criteria": {
+      "has_magenta_dye": "2020-10-08 20:35:51 +0000"
     },
     "done": true
   },
@@ -2923,6 +2993,13 @@
       "has_stone": "2020-10-05 10:32:09 +0000"
     },
     "done": true
+  },
+  "minecraft:husbandry/complete_catalogue": {
+    "criteria": {
+      "textures/entity/cat/british_shorthair.png": "2020-10-18 14:36:21 +0000",
+      "textures/entity/cat/all_black.png": "2020-10-11 22:55:17 +0000"
+    },
+    "done": false
   },
   "minecraft:recipes/redstone/spruce_trapdoor": {
     "criteria": {
